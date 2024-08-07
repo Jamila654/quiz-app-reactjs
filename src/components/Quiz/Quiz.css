@@ -1,0 +1,195 @@
+.container{
+    background-color: white;
+    width: auto;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 40px 50px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+.container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+.container hr{
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+.container .welcome{
+    font-size: large;
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.container .questions h2{
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 18px;
+    font-size: large;
+}
+
+.container .questions li{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 15px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    border-radius: 8px;
+    background: linear-gradient(45deg,#29294a,#6a6aba);
+    color: white;
+}
+.container .questions li:hover{
+    opacity: 0.6;
+}
+.questions ul li.selected {
+    opacity: 0.6;
+}
+
+.welcome{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.questions button{
+    margin-left: 22%;
+    width: 250px;
+    height: 65px;
+    background: linear-gradient(45deg,#29294a,#6a6aba);
+    color: white;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.questions-left{
+    text-align: center;
+    font-size: 15px;
+    align-items: center;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.enter-name{
+    width: auto;
+    max-width: 40%;
+    height: 50px;
+    font-size: 25px;
+    border-color: #29294a;
+    border-radius: 8px;
+    cursor: pointer;
+    padding-left: 5px;
+    margin-left: 18%;
+
+}
+.save-name{
+    width: auto;
+    width: 30%;
+    height: 50px;
+    border-radius: 8px;
+    max-width: 20%;
+    background: linear-gradient(45deg,#29294a,#6a6aba);
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.results{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+@media (max-width:500px) {
+    .questions button{
+        margin-left: 25%;
+        width: 50%;
+
+    }
+    .questions-left{
+        font-size: 15px;
+        align-items: center;
+        margin: auto;
+    
+    }
+    .save-name{
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 8px;
+        cursor: pointer;
+        max-width: 30%;
+
+    }
+    .enter-name{
+        max-width: 60%;
+        height: 50px;
+        font-size: 12px;
+        border-color: #29294a;
+        border-radius: 8px;
+        cursor: pointer;
+        padding-left: 5px;
+        margin-left: 6%;
+        margin-right: 2%;
+    }
+    .input{
+        display: flex;
+        align-items: center;
+    }
+    
+    .container{
+        background-color: white;
+        width: auto;
+        max-width: 90%;
+ 
+}
+.container .questions h2{
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 18px;
+    font-size: 13px;
+}
+.container .questions li{
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 18px;
+    font-size: medium;
+}
+.container .welcome{
+    font-size: 12px;
+}
+
+}
+@media (min-width:501px){
+    .container{
+        background-color: white;
+        width: auto;
+        max-width: 550px;
+    }  
+    .enter-name{
+        max-width: 60%;
+        height: 50px;
+        font-size: 20px;
+        border-color: #29294a;
+        border-radius: 8px;
+        cursor: pointer;
+        padding-left: 5px;
+        margin-left: 6%;
+        margin-right: 2%;
+    }
+}
